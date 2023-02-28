@@ -1,0 +1,40 @@
+# For Examples:
+###
+GET http://127.0.0.1:9085/api/item/list
+Cookie: JessionId=TG4OKFVOZP6A9ML4
+Authorization: Bearer TG4OKFVOZP6A9ML4
+###
+
+GET http://www.baidu.com?hi=hello
+Accept: application/json
+###
+
+POST http://127.0.0.1:9085/login
+Content-Type: application/json
+
+{
+  "username":"zhangsan",
+  "sex":"boy"
+}
+
+###
+POST http://127.0.0.1:9085/login
+Content-Type: application/x-www-form-urlencoded
+
+username=zhangsan&password=123
+
+###
+POST http://127.0.0.1:9085/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+### text域
+--WebAppBoundary
+Content-Disposition: form-data; name="element-name"
+Content-Type: text/plain
+
+username=zhangsan
+
+### json文件域
+--WebAppBoundary
+Content-Disposition: form-data; name="data"; filename="data.json"
+Content-Type: application/json

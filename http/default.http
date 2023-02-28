@@ -1,0 +1,24 @@
+GET http://localhost:8081/v1/videos
+###
+GET http://localhost:8081/v1/version
+###
+POST http://localhost:8081/v1/video/stream
+
+{
+    "filename": "D:/Videos/咒怨：完结篇.mkv"
+}
+###
+GET http://localhost:8081/v1/location/list?path=/Videos/
+###
+GET http://localhost:8081/v1/video/search?key=Lycoris
+###
+GET http://localhost:8081/v1/location/videos?path=D:/Videos&page=0
+
+###
+GET http://localhost:8081/v1/common/syncdir?path=/Videos
+###
+GET http://localhost:8081/v1/common/syncdir/status
+###
+GET http://localhost:8081/v1/common/reload/all/status
+###
+GET http://localhost:8081/v1/common/cover?name=W01pbmdZJkxhdmFBbmltZVN1Yl0gT25paS1jaGFuIHdhIE9zaGltYWkhIFswNV1bMTA4MHBdW0NIUyZKUE5dLm1wNA==&location=RDovVmlkZW9zL+WIq+W9k+asp+WwvOmFseS6hu+8gQ==
